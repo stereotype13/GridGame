@@ -44,7 +44,7 @@ public class Grid {
 		for (int i = 0; i < mSize; ++i) {
 			String tempStringInner = "";
 			for (int j = 0; j < mSize; ++j) {
-				tempStringInner += mGrid.get(i).get(j);
+				tempStringInner += String.format("%1$-"+ 3 + "s", mGrid.get(i).get(j));
 				
 			}
 			tempStringOuter += (tempStringInner + "\n");
